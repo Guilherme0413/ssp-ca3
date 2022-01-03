@@ -1,1 +1,59 @@
 <?xml version = "1.0" encoding = "UTF-8" />
+<menu>
+    <section name="Pizza">
+        <entry>
+            <item>Margherita</item>
+            <price>12.00</price>
+        </entry>
+        <entry>
+            <item>Quattro_Formaggi</item>
+            <price>14.40</price>
+        </entry>
+        <entry>
+            <item>Meat_Feast</item>
+            <price>18.00</price>
+        </entry>
+    </section>
+
+    <section name="Pasta">
+        <entry> 
+            <item>Beef_Lasagne</item>
+            <price>11.00</price>
+        </entry>
+        <entry> 
+            <item>Penne_all_arrabbiata</item>
+            <price>9.00</price>
+        </entry>
+        <entry> 
+            <item>Spaghetti_Al_Sugo</item>
+            <price>10.00</price>
+        </entry>
+    </section>
+
+    <section name="Starters">     
+        <entry>
+            <item>Soup_of_the_day</item>
+            <price>5.00</price>
+        </entry>
+        <entry>
+            <item>Caprese_Salad</item>
+            <price>6.50</price>
+        </entry>
+        <entry>
+            <item>Bruschetta</item>
+            <price>6.00</price>
+        </entry>
+        <entry>
+            <item>Canoli</item>
+            <price>6.50</price>
+        </entry>
+        <entry>
+            <item>Tiramisu</item>
+            <price>6.50</price>
+        </entry>
+        <entry>
+            <item>Panna_cotta</item>
+            <price>7.00</price>
+        </entry>
+    </section>
+</menu>    
