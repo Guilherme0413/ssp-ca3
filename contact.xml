@@ -1,0 +1,32 @@
+<article lang="">
+<sect1 id="myNavbar">
+<para>
+<note>
+<remark><!--Navbar--></remark>
+</note>
+<olink targetdocent="index.html">Home</olink>
+<olink targetdocent="menu.html">MENU</olink>
+<olink targetdocent="about.html">ABOUT</olink>
+<olink targetdocent="contact.html">CONTACT</olink>
+</para>
+</sect1>
+<para>
+<note>
+<remark>Contact Page</remark>
+</note>
+<inlinegraphic fileref="#img/map.jpg" width="0.7862inch" depth="0.3929inch"/>
+<anchor id="contact"/>
+ 
+</para>
+<para>Contact</para>
+<para>Find us at 30-34 Westmoreland St, Dublin 2, D02 HK35 or call us at (01)1234567</para>
+<para>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</para>
+<para>Christmas Menu available</para>
+<para>Reserve a table, ask for today's special or just send us a message:</para>
+<para/>
+<para/>
+<para/>
+<para/>
+<para>SEND MESSAGE</para>
+<para>function confirmInput() { fname = document.forms[0].fname.value; alert("Your request was successfully submitted " + fname + "! Check your email for more details"); }CA3 Server-Side Programming 2020316 </para>
+</article>

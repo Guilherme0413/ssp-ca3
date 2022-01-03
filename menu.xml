@@ -1,0 +1,70 @@
+<article lang="">
+<sect1 id="myNavbar">
+<para>
+<note>
+<remark><!-- Menu Page--></remark>
+</note>
+<note>
+<remark>Navbar</remark>
+</note>
+<olink targetdocent="index.html">Home</olink>
+<olink targetdocent="menu.html">MENU</olink>
+<olink targetdocent="about.html">ABOUT</olink>
+<olink targetdocent="contact.html">CONTACT</olink>
+</para>
+</sect1>
+<sect1 id="menu">
+<para>MENU</para>
+<para>
+<link linkend="">Pizza</link>
+</para>
+<para>
+<link linkend="">Pasta</link>
+</para>
+<para>
+<link linkend="">Starters/Desserts</link>
+</para>
+<sect2 id="pizza">
+<para>Margherita $12.00</para>
+<para>Tomatoes, Buffalo mozzarella, basil</para>
+<para/>
+<para>Quattro Formaggi $14.50</para>
+<para>Four cheeses (Buffalo mozzarella, jarlsberg, parmesan, pecorino)</para>
+<para/>
+<para>Meat Feast Hot! $18.00</para>
+<para>Tomatoes, hot pepporoni, Buffalo mozzarella, chicken, hot sausage, beef</para>
+</sect2>
+<para>
+<anchor id="pasta"/>
+PASTA
+</para>
+<para>Beef Lasagne Speciality $11.00</para>
+<para>Tomato Sauce, mozzarella, parmesan, pecorino, ground Irish Angus beef.</para>
+<para/>
+<para>Penne all'arrabbiata Hot!$9.00</para>
+<para>All'arrabbiata sauce, with garlic, tomatoes, and dried red chili peppers cooked in olive oil</para>
+<para/>
+<para>Spaghetti Al Sugo $10.00</para>
+<para>Fresh tomatoes, onions, and basil</para>
+<para>
+<anchor id="starters"/>
+STARTERS/Desserts
+</para>
+<para>Soup of the day Seasonal $5.00</para>
+<para>Ask the waiter</para>
+<para/>
+<para>Caprese Salad $6.50</para>
+<para>Sliced fresh mozzarella, tomatoes, and basil, seasoned with salt, and olive oil</para>
+<para/>
+<para>Bruschetta $6.00</para>
+<para>Bread with tomatoes, onion, garlic, and balsamic</para>
+<para/>
+<para>Canoli $6.50</para>
+<para>fried tube shaped pastry dough, filled with a sweet cream. The options are ricotta, chocolate or patissiere cream</para>
+<para>Tiramisu $6.50</para>
+<para>Sponge fingers dipped in coffee, layered with a housemade whipped cream, mascarpone cheese, flavoured with cocoa</para>
+<para>Panna cotta $7.00</para>
+<para>Sweetened cream thickened with gelatin, aromatized woth vanilla</para>
+<para>CA3 Server-Side Programming 2020316 </para>
+</sect1>
+</article>
