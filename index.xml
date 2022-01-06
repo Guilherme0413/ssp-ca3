@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8" />
+<article lang="">
+<sect1 id="myNavbar">
+<para>
+<note>
+<remark><!--This template was sourcered from W3 Schools--></remark>
+</note>
+<note>
+<remark><!-- Navbar--></remark>
+</note>
+<olink targetdocent="index.html">Home</olink>
+<olink targetdocent="menu.html">MENU</olink>
+<olink targetdocent="about.html">ABOUT</olink>
+<olink targetdocent="contact.html">CONTACT</olink>
+</para>
+</sect1>
+<para>
+<note>
+<remark>Header with background</remark>
+</note>
+italianCUISINE
+</para>
+<para>
+<olink targetdocent="menu.html">Ready for our menu?</olink>
+</para>
+<para>Italian cuisine is a Mediterranean and rich cuisine, full of colours, flavours, spices, and cooking techniques developed across the Italian Peninsula since antiquity, that makes our cuisine unique. Our cuisine is generally characterized by its simplicity, with many dishes having only two to four main ingredients. Significant changes occurred with the colonization of the Americas and the introduction of potatoes, tomatoes, capsicums, maize and sugar beet - the latter introduced in quantity in the 18th century. Italian cuisine is known for its regional diversity, especially between the north and the south of Italy. It offers an abundance of taste, and is one of the most popular and copied in the world. It influenced several cuisines around the world, chiefly that of the United States. </para>
+<para>How to say Hello in Italian? </para>
+<para>
+<anchor id="demo"/>
+<note>
+<remark><!--Link to a webpage containing information about Italian gastronomy--></remark>
+</note>
+<ulink url="https://en.wikipedia.org/wiki/Italian_cuisine">If you want to know more about our cuisine and the Italian traditions, this link might be helpful.</ulink>
+</para>
+<para>CA3 Server-Side Programming 2020316 </para>
+<para> function myFunction() { document.getElementById("demo").innerHTML = "Ciao!"; } </para>
+</article>
