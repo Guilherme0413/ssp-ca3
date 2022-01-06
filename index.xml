@@ -1,37 +1,95 @@
-<?xml version = "1.0" encoding = "UTF-8" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
 <article lang="">
-<sect1 id="myNavbar">
-<para>
-<note>
-<remark><!--This template was sourcered from W3 Schools--></remark>
-</note>
-<note>
-<remark><!-- Navbar--></remark>
-</note>
-<olink targetdocent="index.html">Home</olink>
-<olink targetdocent="menu.html">MENU</olink>
-<olink targetdocent="about.html">ABOUT</olink>
-<olink targetdocent="contact.html">CONTACT</olink>
-</para>
-</sect1>
-<para>
-<note>
-<remark>Header with background</remark>
-</note>
-italianCUISINE
-</para>
-<para>
-<olink targetdocent="menu.html">Ready for our menu?</olink>
-</para>
-<para>Italian cuisine is a Mediterranean and rich cuisine, full of colours, flavours, spices, and cooking techniques developed across the Italian Peninsula since antiquity, that makes our cuisine unique. Our cuisine is generally characterized by its simplicity, with many dishes having only two to four main ingredients. Significant changes occurred with the colonization of the Americas and the introduction of potatoes, tomatoes, capsicums, maize and sugar beet - the latter introduced in quantity in the 18th century. Italian cuisine is known for its regional diversity, especially between the north and the south of Italy. It offers an abundance of taste, and is one of the most popular and copied in the world. It influenced several cuisines around the world, chiefly that of the United States. </para>
-<para>How to say Hello in Italian? </para>
-<para>
-<anchor id="demo"/>
-<note>
-<remark><!--Link to a webpage containing information about Italian gastronomy--></remark>
-</note>
-<ulink url="https://en.wikipedia.org/wiki/Italian_cuisine">If you want to know more about our cuisine and the Italian traditions, this link might be helpful.</ulink>
-</para>
-<para>CA3 Server-Side Programming 2020316 </para>
-<para> function myFunction() { document.getElementById("demo").innerHTML = "Ciao!"; } </para>
+  <sect1 id="myNavbar">
+    <para><note><remark>&lt;!--This template was sourcered from W3 Schools--&gt;</remark></note><note><remark>Navbar (sit on top)</remark></note><link linkend="">HOME</link> <link linkend="">MENU</link> <link linkend="">ABOUT</link> </para>
+  </sect1>
+  <para><note><remark>Header with background</remark></note>italianCUISINE </para>
+  <para>
+    <olink targetdocent="menu.html">Ready for our menu?</olink>
+  </para>
+  <para>Italian cuisine is a Mediterranean and rich cuisine, full of colours, flavours, spices, and cooking techniques developed across the Italian Peninsula since antiquity, that makes our cuisine unique. Our cuisine is generally characterized by its simplicity, with many dishes having only two to four main ingredients. Significant changes occurred with the colonization of the Americas and the introduction of potatoes, tomatoes, capsicums, maize and sugar beet - the latter introduced in quantity in the 18th century. Italian cuisine is known for its regional diversity, especially between the north and the south of Italy. It offers an abundance of taste, and is one of the most popular and copied in the world. It influenced several cuisines around the world, chiefly that of the United States. </para>
+  <para>&gt; How to say Hello in Italian? </para>
+  <sect1 id="menu">
+    <para><note><remark>Menu Container</remark></note>THE MENU</para>
+    <para>
+      <anchor id="myLink"/>
+      <olink targetdocent="javascript:void(0)">Pizza</olink>
+    </para>
+    <para>
+      <olink targetdocent="javascript:void(0)">Pasta</olink>
+    </para>
+    <para>
+      <olink targetdocent="javascript:void(0)">Starter/Dessert</olink>
+    </para>
+    <sect2 id="Pizza">
+      <para>Margherita $12.00</para>
+      <para>Tomatoes, Buffalo mozzarella, basil</para>
+      <para/>
+      <para>Quattro Formaggi $14.50</para>
+      <para>Four cheeses (Buffalo mozzarella, jarlsberg, parmesan, pecorino)</para>
+      <para/>
+      <para>Meat Feast Hot! $18.00</para>
+      <para>Tomatoes, hot pepporoni, Buffalo mozzarella, chicken, hot sausage, beef</para>
+    </sect2>
+    <sect2 id="Pasta">
+      <para>Beef Lasagne Speciality $11.00</para>
+      <para>Tomato Sauce, mozzarella, parmesan, pecorino, ground Irish Angus beef.</para>
+      <para/>
+      <para>Penne all'arrabbiata Hot! $9.00</para>
+      <para>All'arrabbiata sauce, with garlic, tomatoes, and dried red chili peppers cooked in olive oil</para>
+      <para/>
+      <para>Spaghetti Al Sugo $10.00</para>
+      <para>Fresh tomatoes, onions, and basil</para>
+    </sect2>
+    <para><anchor id="starters"/>STARTERS/Desserts</para>
+    <para>Soup of the day Seasonal $5.00</para>
+    <para>Ask the waiter</para>
+    <para/>
+    <para>Caprese Salad $6.50</para>
+    <para>Sliced fresh mozzarella, tomatoes, and basil, seasoned with salt, and olive oil</para>
+    <para/>
+    <para>Bruschetta $6.00</para>
+    <para>Bread with tomatoes, onion, garlic, and balsamic</para>
+    <para/>
+    <para>Canoli $6.50</para>
+    <para>fried tube shaped pastry dough, filled with a sweet cream. The options are ricotta, chocolate or patissiere cream</para>
+    <para>Tiramisu $6.50</para>
+    <para>Sponge fingers dipped in coffee, layered with a housemade whipped cream, mascarpone cheese, flavoured with cocoa</para>
+    <para>Panna cotta $7.00</para>
+    <para>Sweetened cream thickened with gelatin, aromatized woth vanilla</para>
+  </sect1>
+  <sect1 id="about">
+    <para><note><remark>About Container</remark></note>About</para>
+    <para>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</para>
+    <para>The Chef? Mr. Italiano himself<inlinegraphic fileref="#img/chef.jpg" width="1.5626inch" depth="0.3929inch"/></para>
+    <para>We are proud of our interiors.</para>
+    <para><inlinegraphic fileref="#img/restaurant%20img.jpg" width="0.7862inch" depth="0.3929inch"/> </para>
+    <para>Opening Hours</para>
+    <para>Mon &amp; Tue CLOSED</para>
+    <para>Wednesday 10.00 - 24.00</para>
+    <para>Thursday 10:00 - 24:00</para>
+    <para>Friday 10:00 - 12:00</para>
+    <para>Saturday 10:00 - 23:00</para>
+    <para>Sunday Closed</para>
+  </sect1>
+  <para><note><remark>Image of location/map</remark></note><inlinegraphic fileref="../../w3images/map.jpg" width="0.7862inch" depth="0.3929inch"/><anchor id="myMap"/> </para>
+  <para>CA3 Server-Side Programming 2020316 </para>
+  <para><note><remark>&lt;!--Link to a webpage containing information about Italian gastronomy--&gt;</remark></note><ulink url="https://en.wikipedia.org/wiki/Italian_cuisine">If you want to know more about the Italian traditions and our cuisine, this link might be helpful.</ulink> </para>
+  <para>      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i &lt; x.length; i++) {
+           x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i &lt; x.length; i++) {
+           tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-red";
+      }
+      document.getElementById("myLink").click();
+      </para>
 </article>
