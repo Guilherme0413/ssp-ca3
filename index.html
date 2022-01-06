@@ -1,4 +1,4 @@
-<!--This template was sourcered from W3 Schools-->
+<!--This template was sourcered from W3 Schools https://www.w3schools.com/w3css/tryit.asp?filename=tryweb_pizza-->
 <!DOCTYPE html>
 <html>
     <title>Cupertino Italian Cuisine</title>
@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <!--My JQuery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
     <style>
       body, html {height: 100%}
@@ -19,6 +21,189 @@
         min-height: 90%;
       }
       </style>
+      
+<style>
+  
+  /* Input fields style */
+input {
+  width: 10%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+
+
+/* Container for inputs style */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+/* CSS design sorcered from originally by @jofpin, tweaked by Colt Steele */
+@import url(https://fonts.googleapis.com/css?family=Raleway|Varela+Round|Coda);
+
+body {
+  background: #ecf0f1;
+  padding: 2.23em;
+}
+
+.title {
+  color: #2c3e50;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+}
+.user-profile {
+  margin: auto;
+	width: 27em; 
+  height: 11em;
+  background: #fff;
+  border-radius: .3em;
+}
+
+.user-profile  #fullname {
+  margin: auto;
+  margin-top: -4.40em;
+  margin-left: 5.80em;
+  color: #16a085;
+  font-size: 1.53em;
+  font-family: "Coda", sans-serif;
+  font-weight: bold;
+}
+
+#username {
+  margin: auto;
+  display: inline-block;
+  margin-left: 10.43em;
+  color: #3498db;
+  font-size: .87em;
+  font-family: "varela round", sans-serif;
+}
+
+.user-profile > .description {
+  margin: auto;
+  margin-top: 1.35em;
+  margin-right: 3em;
+  width: 18em;
+  color: #7f8c8d;
+  font-size: .87em;
+  font-family: "varela round", sans-serif;
+}
+
+.user-profile > img#avatar {
+	padding: .7em;
+  margin-left: .3em;
+  margin-top: .3em;
+  height: 6.23em;
+  width: 6.23em;
+  border-radius: 18em;
+}
+
+
+.footer {
+	margin: 2em auto;
+	height: 3.70em;
+  background: #16a085;
+  text-align: center;
+  border-radius: 0 0 .3em .3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.1s;
+}
+
+button {
+  color: white;
+  font-family: "Coda", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  background: none;
+  outline: none;
+  border: 0;
+}
+
+.footer:hover {
+  background: #1abc9c;
+}
+
+.button {
+  background: #353535;
+  outline: solid 2px #353535;
+  border: solid 2px white;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 200px;
+  margin-top: 50px;
+}
+.ul li {
+  display: inline;
+  margin-right: 8px;
+}
+.ul {
+  display: none;
+}
+.table {
+  margin-top: 50px;
+  border: 10px solid rgb(10, 10, 10);
+  width: 33%;
+}
+.table th {
+  padding-top: 20px;
+  text-align: left;
+  font-size: 24px;
+  margin: 30px;
+}
+.table tr,
+td {
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px
+}
+
+</style>
+      
       <body>
       
       <!-- Navbar (sit on top) -->
@@ -47,7 +232,7 @@
           Significant changes occurred with the colonization of the Americas and the introduction of potatoes, tomatoes, capsicums, maize and sugar beet - the latter introduced in quantity in the 18th century. Italian cuisine is known for its regional diversity, especially between the north and the south of Italy. It offers an abundance of taste, and is one of the most popular and copied in the world. It influenced several cuisines around the world, chiefly that of the United States.
         </p></body></b>>
       
-      <!-- Menu Container -->
+      <!-- Menu Container https://www.w3schools.com/w3css/tryit.asp?filename=tryweb_pizza_menu-->
       <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
         <div class="w3-content">
         
@@ -60,7 +245,7 @@
               <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pasta</div>
             </a>
             <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-              <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter/Dessert</div>
+              <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
             </a>
           </div>
       
@@ -94,7 +279,7 @@
               </div>
       
       
-              <h1 id="starters" class="w3-center w3-jumbo w3-padding-32">STARTERS/Desserts</h1>
+              <h1 id="starters" class="w3-center w3-jumbo w3-padding-32">STARTERS</h1>
               <div class="w3-container w3-white w3-padding-32">
               
               <h1><b>Soup of the day</b> <span class="w3-tag w3-grey w3-round">Seasonal</span>
@@ -110,34 +295,130 @@
               <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€6.00</span></h1>
               <p class="w3-text-grey">Bread with tomatoes, onion, garlic, and balsamic</p>
               <hr>
-              
-              <h1><b>Canoli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€6.00</span></h1>
-              <p class="w3-text-grey">fried tube shaped pastry dough, filled with a sweet cream. The options are ricotta, chocolate or patissiere cream</p>
-          
-              <h1><b>Tiramisu</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€6.00</span></h1>
-              <p class="w3-text-grey">Sponge fingers dipped in coffee, layered with a housemade whipped cream, mascarpone cheese, flavoured with cocoa</p>
-          
-              <h1><b>Panna cotta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€6.00</span></h1>
-              <p class="w3-text-grey">Sweetened cream thickened with gelatin, aromatized woth vanilla</p>
-              </div>
         </div>
       </div>
-              <!--The following form that calculates the price of the order was sourcered from https://stackoverflow.com/questions/48140819/javascript-client-side-beverage-price-calculator-->
-              <form id="theform">
 
-                <form id="theform">
-                  Select one of the options:<br>
-                  <select name="item">
-                    <option value="12">Pizza</option>
-                    <option value="10">Pasta</option>
-                    <option value="6">Starter/Dessert</option>
-                  </select><br>
-                  Select the amount:<br>
-                  <input type="number" name="itemamount" value="0">
-                  <br><br>
-                  <button>Calculate</button>
-                </form>
-                <p id="outputarea">€0.00</p>
+      <div class="container">
+        <button class="btn btn-primary" id="myBtn"></button>
+      </div>
+      <div id="output"></div>
+      
+      <script src="./main.js"></script>
+
+</div>
+</div>
+
+<!-- Menus with Container sorcered from https://codereview.stackexchange.com/questions/131875/simple-restaurant-menu -->
+
+<input type="button" class="button" id="btMenu" value="Menu">
+<ul id="liMainMenu" class="ul">
+<li>
+<li>
+  <input type="button" class="button" id="btStarter" value="Pizza">
+</li>
+<li>
+  <input type="button" class="button" id="btMain" value="Pasta">>
+</li>
+<li>
+  <input type="button" class="button" id="btDessert" value="Starter">
+</li>
+</li>
+</ul>
+
+<ul id="liStarter" class="ul">
+<li>
+<input type="button" class="button" id="btStarter1" value="">
+</li>
+<li>
+<input type="button" class="button" id="btStarter2" value="">
+</li>
+<li>
+<input type="button" class="button" id="btStarter3" value="">
+</li>
+</ul>
+
+<ul id="liMain" class="ul">
+<li>
+<input type="button" class="button" id="btMain1" value="">
+</li>
+<li>
+<input type="button" class="button" id="btMain2" value="">
+</li>
+<li>
+<input type="button" class="button" id="btMain3" value="">
+</li>
+
+</ul>
+
+<ul id="liDessert" class="ul">
+<li>
+<input type="button" class="button" id="btDessert1" value="">
+</li>
+<li>
+<input type="button" class="button" id="btDessert2" value="">
+</li>
+<li>
+<input type="button" class="button" id="btDessert3" value="">
+</li>
+
+</ul>
+
+
+<table class="table">
+  <th>Your Order: €</th>
+  <tr>
+    <td>Pizza : €</td>
+    <td id="selectedStarter"></td>
+  </tr>
+  <tr>
+    <td>Pasta : €</td>
+    <td id="selectedMain"></td>
+  </tr>
+  <tr>
+    <td>Starter : €</td>
+    <td id="selectedDessert"></td>
+  </tr>
+  <tr>
+    <td>Total : €</td>
+    <td id="total"></td>
+  </tr>
+</table>
+
+
+  </div>
+
+
+
+
+<!--Password Generator sourcered from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_password_val-->
+<p style="color:rgb(12, 12, 12)">Enter your username and password</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="usrname">Username</label>
+    <input type="text" id="usrname" name="usrname" required>
+
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <a href="#center" input type="submit" value="Submit" onclick="myFunction()">Login </a>
+ 
+    <p id="demo"></p>
+  </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+  </div>
+  </div>
+  </div>
+
+
+<a href="https://deliveroo.ie/?utm_source=google&utm_medium=cpc&utm_term=deliveroo&utm_campaign=%2A%2A%5EAcquisition%5ESearch%5EBrand%5EIreland%5EAll%20Cities%5E%5EExact%5EAPI%5E%5E%5E%5E%5EEN%5EStrategic%5E%C2%A310274646120&utm_loc=1007850&utm_device=c&utm_adposition=&utm_network=g&utm_targetid=kwd-52577441545&gclid=EAIaIQobChMIt4Othqed9QIVhe_tCh1LswNWEAAYASAAEgJOjvD_BwE&gclsrc=aw.ds">To complete your order, finds on deliveroo through this link</a>
       
       
       <!--the link below sends the user to the official deliveroo website in order to complete the order online -->>
@@ -151,8 +432,8 @@
       <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
         <div class="w3-content">
           <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
-          <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p><strong>The Chef?</strong> Mr. Italiano himself<img src="/src/img/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+          <p>The Pizza Restaurant was founded in 2015 by Mr. Guilherme Oliveira in Dublin, after moving from Palermo, willing to spread the authentical Italian cuisine and the rich culture from his country.</p>
+          <p><strong>The Chef?</strong> Mr. Oliveira himself<img src="/src/img/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
           <p>We are proud of our interiors.</p>
           <img src="/src/img/restaurant img.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
           <h1><b>Opening Hours</b></h1>
@@ -177,11 +458,13 @@
       
       
       <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-        <p>CA3 Server-Side Programming 2020316 </p>
-        <!--Link to a webpage containing information about Italian gastronomy-->
-      <a href="https://en.wikipedia.org/wiki/Italian_cuisine">If you want to know more about the Italian traditions and our cuisine, this link might be helpful.</a>
-      
-      </footer></p>
+  <!--Link to a webpage containing information about Italian gastronomy-->
+  <p>If you want to know more about the Italian traditions and our cuisine, <a href="https://en.wikipedia.org/wiki/Italian_cuisine"title="Italia" target="_blank" class="w3-hover-text-green"> click here*</a></p>
+  
+  <p>CA3 Server-Side Programming 2020316 </p>
+  <!--Link to my Github repository-->
+  <p>See this code on<a href="https://github.com/Guilherme0413/ssp-ca3"title="Github" target="_blank" class="w3-hover-text-green"> Github</a>*</p>
+</footer></p>
       
       <script>
       // Tabbed Menu
@@ -201,16 +484,335 @@
       document.getElementById("myLink").click();
 
       
-      //the following snippet was sourcered from https://stackoverflow.com/questions/48140819/javascript-client-side-beverage-price-calculator
-      
-      document.querySelector('#theform').addEventListener('submit', function(e) {
-  e.preventDefault();
-  let price = this.item.value * 1;
-  let amount = this.itemamount.value * 1;
-  let total = (price * amount).toFixed(2);
-  document.querySelector('#outputarea').textContent = total;
+      var myInput = document.getElementById("psw");
+  var letter = document.getElementById("letter");
+  var capital = document.getElementById("capital");
+  var number = document.getElementById("number");
+  var length = document.getElementById("length");
+  
+  // When the user clicks on the password field, show the message box
+  myInput.onfocus = function() {
+    document.getElementById("message").style.display = "block";
+  }
+  
+  // When the user clicks outside of the password field, hide the message box
+  myInput.onblur = function() {
+    document.getElementById("message").style.display = "none";
+  }
+  
+  // When the user starts to type something inside the password field
+  myInput.onkeyup = function() {
+    // Validate lowercase letters
+    var lowerCaseLetters = /[a-z]/g;
+    if(myInput.value.match(lowerCaseLetters)) {  
+      letter.classList.remove("invalid");
+      letter.classList.add("valid");
+    } else {
+      letter.classList.remove("valid");
+      letter.classList.add("invalid");
+    }
+    
+    // Validate capital letters
+    var upperCaseLetters = /[A-Z]/g;
+    if(myInput.value.match(upperCaseLetters)) {  
+      capital.classList.remove("invalid");
+      capital.classList.add("valid");
+    } else {
+      capital.classList.remove("valid");
+      capital.classList.add("invalid");
+    }
+  
+    // Validate numbers
+    var numbers = /[0-9]/g;
+    if(myInput.value.match(numbers)) {  
+      number.classList.remove("invalid");
+      number.classList.add("valid");
+    } else {
+      number.classList.remove("valid");
+      number.classList.add("invalid");
+    }
+    
+    // Validate length
+    if(myInput.value.length >= 8) {
+      length.classList.remove("invalid");
+      length.classList.add("valid");
+    } else {
+      length.classList.remove("valid");
+      length.classList.add("invalid");
+    }
+    
+    
+  }
+  
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-red";
+  }
+  document.getElementById("myLink").click();
+  
+      //Get Btn And Create Function
+document.getElementById('myBtn').addEventListener('click', getData);
 
+function getData() {
+    // console.log('test');
+
+    //Random user generator 
+    fetch('https://randomuser.me/api/?results=5')
+        .then(res => res.json())
+        .then(data => {
+            // console.log(data);
+
+            let author = data.results;
+            // console.log(author);
+
+            //Get Data Value
+            let output = "<h2><center>Customers</center></h2>";
+
+            //Get Data Loop Through
+            author.forEach(function (lists) {
+                output += `
+                <div class="container">
+                    <div class="card mt-4 bg-light">
+                        <ul class="list-group">
+                            <li class="list-group-item"><h2>Name: ${lists.name.first}</h2></li>
+                            <ul class="list-group-item"><img src="${lists.picture.large}"></ul>
+                            <li class="list-group-item">Phone Number: ${lists.cell}</li>
+                            <li class="list-group-item">Email ID: ${lists.email}</li>
+                            <li class="list-group-item">Gender: ${lists.gender}</li>
+
+
+                        </ul>
+                    </div>
+                </div> `;
+            });
+
+            //Show On Our Screen All Data
+            document.getElementById('output').innerHTML = output;
+
+        });
+};
+
+
+  
+  $(document).ready(function() {
+  //Variables
+  var selectedStarter = {
+    dish: "(None)",
+    price: 0
+  };
+  var selectedMain = {
+    dish: "(None)",
+    price: 0
+  };
+  var selectedDessert = {
+    dish: "(None)",
+    price: 0
+  };
+  var starter = {
+    firstDish: "Margherita",
+    firstDishPrice: 12,
+    secondDish: "Quattro Formaggi",
+    secondDishPrice: 12,
+    thirdDish: "Meat Feast",
+    thirdDishPrice: 12
+  };
+
+  var main = {
+    firstDish: "Beef Lasagne",
+    firstDishPrice: 10,
+    secondDish: "Penne all'arrabbiata",
+    secondDishPrice: 10,
+    thirdDish: "Spaghetti Al Sugo",
+    thirdDishPrice: 10
+    
+  };
+
+  var dessert = {
+    firstDish: "Soup of the day",
+    firstDishPrice: 6,
+    secondDish: "Caprese Salad",
+    secondDishPrice: 6,
+    thirdDish: "Bruschetta",
+    thirdDishPrice: 6
+    
+  };
+
+  function total() {
+    return selectedStarter.price + selectedMain.price + selectedDessert.price;
+  }
+
+  function selectedStarterFnc(dish, price) {
+    selectedStarter.price = price;
+    selectedStarter.dish = dish;
+    $("#total").html(total());
+    return dish + "(" + price + ")";
+  }
+
+  function selectedMainFnc(dish, price) {
+    selectedMain.price = price;
+    selectedMain.dish = dish;
+    $("#total").html(total());
+    return dish + "(" + price + ")";
+  }
+
+  function selectedDessertFnc(dish, price) {
+    selectedDessert.price = price;
+    selectedDessert.dish = dish;
+    $("#total").html(total());
+    return dish + "(" + price + ")";
+  }
+
+  // Instantiating HTML Button Elements
+  // Starter Elements
+  document.getElementById("btStarter1").value =
+    starter.firstDish + ": " + starter.firstDishPrice;
+
+  document.getElementById("btStarter2").value =
+    starter.secondDish + ": " + starter.secondDishPrice;
+
+  document.getElementById("btStarter3").value =
+    starter.thirdDish + ": " + starter.thirdDishPrice;
+
+  // Main Elements
+  document.getElementById("btMain1").value =
+    main.firstDish + ": " + main.firstDishPrice;
+
+  document.getElementById("btMain2").value =
+    main.secondDish + ": " + main.secondDishPrice;
+
+  document.getElementById("btMain3").value =
+    main.thirdDish + ": " + main.thirdDishPrice;
+
+ 
+
+  // Dessert Elements
+  document.getElementById("btDessert1").value =
+    dessert.firstDish + ": " + dessert.firstDishPrice;
+
+  document.getElementById("btDessert2").value =
+    dessert.secondDish + ": " + dessert.secondDishPrice;
+
+  document.getElementById("btDessert3").value =
+    dessert.thirdDish + ": " + dessert.thirdDishPrice;
+
+  // Your Order: Elements
+  document.getElementById("selectedStarter").innerHTML =
+    selectedStarter.dish + " (" + selectedStarter.price + ")";
+
+  document.getElementById("selectedMain").innerHTML =
+    selectedMain.dish + " (" + selectedMain.price + ")";
+
+  document.getElementById("selectedDessert").innerHTML =
+    selectedDessert.dish + " (" + selectedDessert.price + ")";
+
+  // Functions (JQuery)
+  // Main menu onClicks handler
+  $("#btMenu").click(function() {
+    $("#liMainMenu").toggle("slow");
+  });
+
+  $("#btStarter").click(function() {
+    $("#liStarter").toggle("slow", function() {
+      if ($(this).css("display") == "none") {
+        $("#btStarter").css("background-color", "black");
+      } else {
+        $("#btStarter").css("background-color", "blue");
+      }
+    });
+  });
+
+  $("#btMain").click(function() {
+    $("#liMain").toggle("slow", function() {
+      if ($(this).css("display") == "none") {
+        $("#btMain").css("background-color", "black");
+      } else {
+        $("#btMain").css("background-color", "blue");
+      }
+    });
+  });
+
+  $("#btDessert").click(function() {
+    $("#liDessert").toggle("slow", function() {
+      if ($(this).css("display") == "none") {
+        $("#btDessert").css("background-color", "black");
+      } else {
+        $("#btDessert").css("background-color", "blue");
+      }
+    });
+  });
+
+  // Starter onClicks
+  $("#btStarter1").click(function() {
+    $("#liStarter").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedStarter").html(selectedStarterFnc(starter.firstDish, starter.firstDishPrice));
+  });
+
+  $("#btStarter2").click(function() {
+    $("#liStarter").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedStarter").html(selectedStarterFnc(starter.secondDish, starter.secondDishPrice));
+  });
+
+  $("#btStarter3").click(function() {
+    $("#liStarter").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedStarter").html(selectedStarterFnc(starter.thirdDish, starter.thirdDishPrice));
+  });
+
+  // Main onClicks
+  $("#btMain1").click(function() {
+    $("#liMain").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedMain").html(selectedMainFnc(main.firstDish, main.firstDishPrice));
+  });
+
+  $("#btMain2").click(function() {
+    $("#liMain").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedMain").html(selectedMainFnc(main.secondDish, main.secondDishPrice));
+  });
+
+  $("#btMain3").click(function() {
+    $("#liMain").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedMain").html(selectedMainFnc(main.thirdDish, main.thirdDishPrice));
+  });
+
+  // Dessert onClicks
+  $("#btDessert1").click(function() {
+    $("#liDessert").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedDessert").html(selectedDessertFnc(dessert.firstDish, dessert.firstDishPrice));
+  });
+
+  $("#btDessert2").click(function() {
+    $("#liDessert").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedDessert").html(selectedDessertFnc(dessert.secondDish, dessert.secondDishPrice));
+  });
+
+  $("#btDessert3").click(function() {
+    $("#liDessert").children("li").children("input").css("background-color", "red");
+    $(this).css("background-color", "green");
+    $("#selectedDessert").html(selectedDessertFnc(dessert.thirdDish, dessert.thirdDishPrice));
+  });
 });
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You are logged in. Please, place your order.";
+}
+
       </script>
       
       </body>
